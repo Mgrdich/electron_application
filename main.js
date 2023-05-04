@@ -4,7 +4,7 @@ const path = require('path');
 const MAC_OS = 'darwin';
 
 function isMacOS() {
-    return process.platform !== MAC_OS;
+    return process.platform === MAC_OS;
 }
 
 const createWindow = () => {
