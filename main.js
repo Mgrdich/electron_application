@@ -16,7 +16,11 @@ const createWindow = () => {
         },
     });
 
-    ipcMain.handle('ping', () => 'pong')
+    ipcMain.handle('ping', () => {
+        console.log('ping is pong-ed')
+        return 'pong';
+    });
+    // win.webContents.openDevTools()
 
     return win.loadFile('index.html');
 }
