@@ -7,6 +7,8 @@ function isMacOS() {
     return process.platform === MAC_OS;
 }
 
+// if (require('electron-squirrel-startup')) app.quit();
+
 const createWindow = () => {
     const win = new BrowserWindow({
         width: 800,
